@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.render('index', { weather: null, error: null });
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
 app.get('/weather', async (req, res) => {
   const city = req.query.city;
   const apiKey = 'c8c15a9b2ed5d84385700f7617b03b67';
