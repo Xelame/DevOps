@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { weather: null, error: null });
+  res.render('contact');
 });
 
 app.get('/weather', async (req, res) => {
