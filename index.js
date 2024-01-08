@@ -1,5 +1,6 @@
 const express = require('express');
 const axios = require('axios');
+const serverless = require('serverless-http');
 
 const app = express();
 const port = 3000;
@@ -30,6 +31,10 @@ app.get('/weather', async (req, res) => {
   }
 });
 
+const handler = serverless(app);
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+module.exports = { handler };
