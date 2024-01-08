@@ -32,6 +32,9 @@ The project belongs to its authors. ✍️
 
 # Instructions : 
 
+- Make sure to install Express via `npm install express` in order to be able to run and launch the projet
+- Then write down the command `Node index.js` to start the app on localhost:3000
+
 
 ## Is everything clear ? Alright ! 🎉
 
@@ -42,4 +45,4 @@ Final step... Enjoy ! 😄
 
 *Nantes YNOV Campus - B3 Informatique - 2023/2024*
 
-*Hackathon Project - 2023*
+*Weather Project - 2023*
