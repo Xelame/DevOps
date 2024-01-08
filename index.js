@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.render('index', { weather: null, error: null });
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact', { weather: null, error: null });
+});
+
 app.get('/weather', async (req, res) => {
   const city = req.query.city;
   const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
